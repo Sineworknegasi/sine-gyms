@@ -4,11 +4,12 @@ nav {
     align-items: center;
     background-color: #333;
     padding: 2rem;
-    position: fixed;
+    top: 3rem;
+    position:absolute;
     width: 100%;
     left: 0;
     right: 0;
-    position: relative;
+    z-index: 3;
 }
 nav .Brand_title {
     color: #fff;
@@ -45,9 +46,39 @@ nav ul li:nth-of-type(6) a:hover {
     display: none;
 }
 
+.show_menu {
+    top: -1000%;
+}
+
+.hide_menu {
+    top: 100%;
+}
+
 @media screen and (max-width: 752px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--dark-gray);
+        padding: 2rem;
+        transition: background-color 0.3s ease-in-out;
+    }
     nav ul {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: var(--dark-gray);
+        right: 0;
+        padding: 5rem 2rem;
+        text-align: center;
+        width: 100%;
+        transition:  0.5s ease-in-out;
+    }
+    nav ul li:nth-of-type(6) a {
+        padding: 0;
+        background-color: var(--dark-gray);
     }
     nav .hamburger_menu {
         position: absolute;
@@ -61,5 +92,9 @@ nav ul li:nth-of-type(6) a:hover {
         background-color: var(--color-red);
         color: #fff;
         transition: background-color 0.3s ease-in-out;
+    }
+    nav ul li:nth-of-type(6) a:hover {
+        background-color: #fff;
+        color: var(--color-red);
     }
 }
