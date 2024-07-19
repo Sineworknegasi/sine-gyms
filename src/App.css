@@ -3,6 +3,7 @@
   --dark-gray: #212529;
   --color-red: #F4544C;
   --color-black: #0A0A0A;
+  --light-inverse: #777;
 }
 
 * {
@@ -12,12 +13,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.light_inverse_text {
+  color: var(--light-inverse);
+}
+
 .red_btn {
   background-color: var(--color-red);
   text-transform: uppercase;
   color: #fff;
   padding: 0.8rem 1.5rem;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 400;
   border: none;
   text-decoration: none;
@@ -25,6 +30,23 @@
 }
 .red_btn:hover {
   background-color: rgb(224, 80, 80);
+  color: white;
+}
+.black_btn {
+  background-color: black;
+  text-transform: uppercase;
+  color: #fff;
+  width: 50%;
+  padding: 0.6rem;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.black_btn:hover {
+  background-color: rgb(8, 8, 8);
   color: white;
 }
 
