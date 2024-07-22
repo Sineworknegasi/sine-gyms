@@ -8,6 +8,9 @@ import Classes from './Components/Classes/Classes';
 import Services from './Components/Services/Services';
 import Testimonial from './Components/Testimonial/Testimonial';
 import Programs from './Components/Programs/Programs';
+import Maps from './Components/Map/Maps';
+import Footer from './Components/Footer/Footer';
+
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
       <Services/>
       <Testimonial/>
       <Programs/>
+      <Maps/>
+      <Footer/>
     </div>
   );
 }

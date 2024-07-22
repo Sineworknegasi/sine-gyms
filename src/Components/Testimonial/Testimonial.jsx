@@ -15,7 +15,7 @@ const Testimonial = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 d-none d-md-flex">
                     <img className=' img-fluid' src="https://www.okler.net/previews/porto/10.2.0/img/demos/gym/testimonial/testimonial-woman-1.jpg " alt="" />
                 </div>
             </div>

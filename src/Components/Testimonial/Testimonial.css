@@ -11,26 +11,26 @@
 }
 
 .testimonial_comment {
-    font-size: 1.1rem;
-    width: 80%;
+    font-size: 1rem;
 }
+
 
 .testimonial_comment::before {
     content: ' " ';
     position: absolute;
     top: -50px;
-    left: -12px;
+    left: 12px;
     transform: translateX(-50%);
     font-size: 7rem;
-    color: white;
+    color: var(--color-red);
 }
 .testimonial_comment::after {
     content: ' " ';
     position: absolute;
-    right: -12px;
+    right: 12px;
     height: 100%;
     font-size: 7rem;
-    color: white;
+    color: var(--color-red);
 }
 
 .testimonial_comment {
@@ -56,3 +56,5 @@
     font-size: 14px;
     font-weight: 400;
 }
+
+

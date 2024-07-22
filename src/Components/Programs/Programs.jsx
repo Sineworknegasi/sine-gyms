@@ -1,6 +1,7 @@
 import React from "react";
 import "./Programs.css";
 import { FaDotCircle } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 const Programs = () => {
   const backgrounds = [
@@ -68,22 +69,25 @@ const Programs = () => {
               <span>Sunday</span> <span>:Closed</span>
             </li>
           </ul>
-          <div className="owl-dots d-flex gap-1 mx-3 z-2 position-relative">
-            <span className="owl-dot active">
-              <FaDotCircle />
-            </span>
-            <span className="owl-dot">
-              <FaDotCircle />
-            </span>
-            <span className="owl-dot">
-              <FaDotCircle />
-            </span>
-            <span className="owl-dot">
-              <FaDotCircle />
-            </span>
+        </div>
+        <div className="col-md-4  p-0 m-0">
+          <div className="insta_pics">
+          <img
+            src="https://scontent.cdninstagram.com/v/t51.2885-15/15876777_1858533337757635_6628110251218436096_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=18de74&_nc_ohc=c9ZUVLgF2VoQ7kNvgF2ZI46&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AYCk-YwtVA2Ank-Aepfol1J77U_00S6i0yiOfCAMb4ifew&oe=66A3B55B"
+            alt=""
+            className=" img-fluid"
+          />
+          <img
+            src="https://scontent.cdninstagram.com/v/t51.2885-15/15801901_191845547950755_2462619486000250880_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=18de74&_nc_ohc=6tnqFHk6AtIQ7kNvgEOA3wN&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AYC1DfsV7Qz60baTDWSF_slQXqMl0pNPdZEhl8YKvvJtog&oe=66A3BB4F"
+            alt=""
+            className=" img-fluid"
+          />
+          <a className="instagram" href="www.instagram.com">
+            
+            <FaInstagram className="insta_icon" />
+          </a>
           </div>
         </div>
-        <div className="col-md-4 insta_pics"></div>
       </div>
     </section>
   );

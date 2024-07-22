@@ -41,7 +41,7 @@ const data = [
 
 const Services = () => {
   return (
-    <section className="Service_section section_gap">
+    <section className="Service_section section_gap w-100">
       <div className="container">
         <div className="row">{data}</div>
       </div>

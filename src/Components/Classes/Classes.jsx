@@ -4,7 +4,7 @@ import { FaDotCircle } from "react-icons/fa";
 
 const Classes = () => {
   return (
-    <section className="Classes_section">
+    <section className="Classes_section w-100">
       <div className="row w-100 h-100">
         <div className=" col-md-4 col-sm-12 Our-Packages p-3 px-5 bglayer">
           <h2>Our Packages</h2>
