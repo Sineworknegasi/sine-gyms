@@ -1,0 +1,98 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    top: 0;
+    position:fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+nav .Brand_title {
+    color: #fff;
+    text-decoration: none;
+}
+nav .Brand_title span {
+    color: var(--color-red);
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    gap: 1.5rem;
+    padding: 0;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+nav ul li:nth-of-type(6) a {
+    background-color:var(--color-red);
+    padding: 2rem;
+}
+nav ul li a:hover {
+    color: var(--color-red);
+}
+nav ul li:nth-of-type(6) a:hover {
+    background-color: #fff;
+    color: var(--color-red);
+}
+
+.menu_icon, .hamburger_menu {
+    display: none;
+}
+
+.show_menu {
+    top: -1000%;
+}
+
+.hide_menu {
+    top: 100%;
+}
+
+@media screen and (max-width: 752px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--dark-gray);
+        padding: 2rem;
+        transition: background-color 0.3s ease-in-out;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: var(--dark-gray);
+        right: 0;
+        padding: 5rem 2rem;
+        text-align: center;
+        width: 100%;
+        transition:  0.5s ease-in-out;
+    }
+    nav ul li:nth-of-type(6) a {
+        padding: 0;
+        background-color: var(--dark-gray);
+    }
+    nav .hamburger_menu {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 1rem;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: var(--color-red);
+        color: #fff;
+        transition: background-color 0.3s ease-in-out;
+    }
+    nav ul li:nth-of-type(6) a:hover {
+        background-color: #fff;
+        color: var(--color-red);
+    }
+}

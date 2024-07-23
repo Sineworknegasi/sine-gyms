@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
-import './Header.css'
+import './Header2.css'
 import { TiThMenu } from "react-icons/ti";
 import { TbWaveSine } from "react-icons/tb";
 import { Link } from 'react-router-dom';
 
-
-const Header = () => {
-
-  const [Show, setShow] = useState(false);
+const Header2 = () => {
+    const [Show, setShow] = useState(false);
   return (
        <section className='header_section'>
-         <nav className='container'>
+         <nav className=''>
             <h3 className='Brand_title'>SINE<TbWaveSine/><span>GYM</span></h3>
             <ul className={Show ? "hide_menu" : "show_menu"}>
                 <li><Link to='/'>Home</Link></li>
@@ -30,4 +28,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header2

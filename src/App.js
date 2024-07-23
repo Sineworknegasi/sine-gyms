@@ -1,6 +1,5 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header/Header";
@@ -18,32 +17,35 @@ import Join from "./pages/Join/Join";
 import Pricing from "./pages/Pricing/Pricing";
 import Staff from "./pages/Staff/Staff";
 import Contactus from "./pages/Contactus/Contactus";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router className="App">
-      <Route
-        path="/"
-        Component={
-          <>
-            <Header />
-            <Hero />
-            <About />
-            <Classes />
-            <Services />
-            <Testimonial />
-            <Programs />
-            <Maps />
-            <Footer />
-          </>
-        }
-      />
-      <Route path="/aboutus" component={Aboutus} />
-      <Route path="/Class" component={Class} />
-      <Route path="/staff" component={Staff} />
-      <Route path="/pricing" component={Pricing} />
-      <Route path="/Contactus" component={Contactus} />
-      <Route path="/join" component={Join} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Hero />
+              <About />
+              <Classes />
+              <Services />
+              <Testimonial />
+              <Programs />
+              <Maps />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/aboutus" element={<Aboutus/>} />
+        <Route path="/class" element={<Class/>} />
+        <Route path="/staff" element={<Staff/>} />
+        <Route path="/pricing" element={<Pricing/>} />
+        <Route path="/contactus" element={<Contactus/>} />
+        <Route path="/join" element={<Join/>} />
+      </Routes>
     </Router>
   );
 }
