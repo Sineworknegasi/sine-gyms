@@ -70,7 +70,6 @@ const Aboutus = () => {
   ];
   return (
     <>
-      
       <section className="About_page section_gap2 ">
       <Header2/>
         <div className="About_content">

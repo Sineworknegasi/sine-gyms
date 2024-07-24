@@ -7,8 +7,9 @@ import { Link } from 'react-router-dom';
 const Header2 = () => {
     const [Show, setShow] = useState(false);
   return (
-       <section className='header_section'>
-         <nav className=''>
+       <section className='header_section2'>
+         <div className=' d-flex justify-content-center w-100 background_nav'>
+         <nav className='container'>
             <h3 className='Brand_title'>SINE<TbWaveSine/><span>GYM</span></h3>
             <ul className={Show ? "hide_menu" : "show_menu"}>
                 <li><Link to='/'>Home</Link></li>
@@ -24,6 +25,7 @@ const Header2 = () => {
                 <TiThMenu/>
             </div>
         </nav>
+         </div>
        </section>
   )
 }

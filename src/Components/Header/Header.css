@@ -1,4 +1,4 @@
-nav {
+.header_section nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,51 +11,51 @@ nav {
     right: 0;
     z-index: 3;
 }
-nav .Brand_title {
+.header_section nav .Brand_title {
     color: #fff;
     text-decoration: none;
 }
-nav .Brand_title span {
+.header_section nav .Brand_title span {
     color: var(--color-red);
 }
-nav ul {
+.header_section nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     gap: 1.5rem;
     padding: 0;
 }
-nav ul li a {
+.header_section nav ul li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
-nav ul li:nth-of-type(6) a {
+.header_section nav ul li:nth-of-type(6) a {
     background-color:var(--color-red);
     padding: 2rem;
 }
-nav ul li a:hover {
+.header_section nav ul li a:hover {
     color: var(--color-red);
 }
-nav ul li:nth-of-type(6) a:hover {
+.header_section nav ul li:nth-of-type(6) a:hover {
     background-color: #fff;
     color: var(--color-red);
 }
-
-.menu_icon, .hamburger_menu {
+ 
+.header_section .menu_icon, .header_section .hamburger_menu {
     display: none;
 }
 
-.show_menu {
+.header_section .show_menu {
     top: -1000%;
 }
 
-.hide_menu {
+.header_section .hide_menu {
     top: 100%;
 }
 
 @media screen and (max-width: 752px) {
-    nav {
+    .header_section nav {
         position: fixed;
         top: 0;
         left: 0;
@@ -64,7 +64,7 @@ nav ul li:nth-of-type(6) a:hover {
         padding: 2rem;
         transition: background-color 0.3s ease-in-out;
     }
-    nav ul {
+    .header_section nav ul {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -76,11 +76,11 @@ nav ul li:nth-of-type(6) a:hover {
         width: 100%;
         transition:  0.5s ease-in-out;
     }
-    nav ul li:nth-of-type(6) a {
+    .header_section nav ul li:nth-of-type(6) a {
         padding: 0;
         background-color: var(--dark-gray);
     }
-    nav .hamburger_menu {
+    .header_section nav .hamburger_menu {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -93,7 +93,7 @@ nav ul li:nth-of-type(6) a:hover {
         color: #fff;
         transition: background-color 0.3s ease-in-out;
     }
-    nav ul li:nth-of-type(6) a:hover {
+    .header_section nav ul li:nth-of-type(6) a:hover {
         background-color: #fff;
         color: var(--color-red);
     }
