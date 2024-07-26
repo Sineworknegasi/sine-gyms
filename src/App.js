@@ -21,6 +21,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
+    <>
     <Router className="App">
       <Routes>
         <Route
@@ -47,6 +48,7 @@ function App() {
         <Route path="/join" element={<Join/>} />
       </Routes>
     </Router>
+    </>
   );
 }
 

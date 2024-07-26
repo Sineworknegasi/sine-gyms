@@ -39,14 +39,14 @@
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
-.header_section2 nav ul li:nth-of-type(6) a {
+.header_section2 nav ul li:nth-of-type(7) a {
     background-color:var(--color-red);
     padding: 2rem;
 }
 .header_section2 nav ul li a:hover {
     color: var(--color-red);
 } 
-.header_section2 nav ul li:nth-of-type(6) a:hover {
+.header_section2 nav ul li:nth-of-type(7) a:hover {
     background-color: #fff;
     color: var(--color-red);
 }

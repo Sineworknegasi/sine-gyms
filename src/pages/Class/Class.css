@@ -1,0 +1,49 @@
+.class_page {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.Classes_Container {
+    background-color: black;
+    padding:  4.9rem 0;
+}
+.class_card{
+    cursor: pointer;
+}
+.Classes_Container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all .3s ease;
+    border-radius: 3px;
+    position: relative;
+    width: 100%;
+}
+.class_img {
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+.Classes_card {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.class_btn {
+    position: absolute;
+    bottom: 0%;
+    transform: translateY(-80%);
+    left: 35%;
+}
+
+.Classes_card p {
+    color: var(--dark-gray);
+    font-size: 13px;
+    line-height: 1.9;
+}

@@ -1,0 +1,32 @@
+.Princing_Container {
+    background-color: black;
+    padding:  3.2em 0 4rem;
+    z-index: 0;
+}
+.Pricing_card {
+    position: relative;
+    padding: 4rem 0;
+}
+.Pricing_card p {
+    color: var(--color-red);
+    font-weight: 800;
+}
+.Pricing_card ul li {
+    list-style: none;
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 9px;
+    margin-bottom: 0;
+    color: #777777;
+    padding-bottom: 9px;
+}
+
+.Pricing_card ul li:last-child {
+    border-bottom: none;
+}
+
+.Pricing_card .red_btn {
+    position: absolute;
+    padding: 0.8rem 2rem;
+    bottom: 0;
+    transform: translate(0% , 50%);
+}

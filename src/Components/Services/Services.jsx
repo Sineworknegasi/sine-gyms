@@ -28,7 +28,7 @@ const data = [
       <div className="col-md-4">
         <div className=" d-flex flex-column justify-content-center align-items-center">
           <img src={item.icon} alt="" className="mb-2" />
-          <h2 className=" fw-bold">{item.title}</h2>
+          <h2 className=" fw-bold mb-4">{item.title}</h2>
           <p className="Service_para_text text-secondary text-center light_inverse_text">{item.text}</p>
           <a href="" className="red_btn mt-3">
             {" "}
